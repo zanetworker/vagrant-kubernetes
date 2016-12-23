@@ -1,0 +1,27 @@
+---
+- box:
+    vb: "bento/ubuntu-16.04" 
+  name: "master"
+  nics:
+    - type: "private_network"
+      ip_addr: "172.42.42.10"
+  ram: "2000"
+  vcpu: "2"
+
+- box:
+    vb: "bento/ubuntu-16.04"
+  name: "node-1"
+  nics:
+    - type: "private_network"
+      ip_addr: "172.42.42.11"
+  ram: "2000"
+  vcpu: "2"
+
+- box:
+    vb: "bento/ubuntu-16.04"
+  name: "node-2"
+  nics:
+    - type: "private_network"
+      ip_addr: "172.42.42.12"
+  ram: "2000"
+  vcpu: "2"
